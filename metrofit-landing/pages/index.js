@@ -1,8 +1,27 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useState } from 'react'
+
+
+
 
 export default function Home() {
+
+  const [first, setFirst] = useState("")
+  const [last, setLast] = useState("")
+
+  const handleSubmit = async () => {
+    e.preventDefault();
+
+    const form = {
+      first, 
+      last
+    }
+
+    console.log("FORM: ", form)
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,12 +31,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <form action="/api/form" method="post">
-          <label for="first">First name:</label>
-          <input type="text" id="first" name="first" />
-          <label for="last">Last name:</label>
-          <input type="text" id="last" name="last" />
-          <button type="submit">Submit</button>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="first">First name:</label>
+          <input type="text" id="first" name="first"  value={first} onChange={e => setFirst(e.target.value)}/>
+          <label htmlFor="last">Last name:</label>
+          <input type="text" id="last" name="last" value={last} onChange={e => setLast(e.target.value)} />
+          <button type="submit" >Submit</button>
         </form>
       </main>
 

@@ -5,8 +5,8 @@ import {NextResponse} from 'next/server'
 
 export default function Home() {
 
-  const [first, setFirst] = useState("")
-  const [last, setLast] = useState("")
+  const [first, setFirst] = useState(" ")
+  const [last, setLast] = useState(" ")
 
   const handleSubmit = async () => {
     // e.preventDefault(); 
@@ -18,7 +18,7 @@ export default function Home() {
 
     console.log("FORM: ", form)
 
-    return NextResponse.redirect("/")
+    // return NextResponse.redirect("/")
 
   }
 
@@ -30,7 +30,7 @@ export default function Home() {
       <main className={styles.main}>
         <form onSubmit={handleSubmit}>
           <label htmlFor="first">First name:</label>
-          <input type="text" id="first" name="first"  value={first} onChange={e => setFirst(e.target.value)}/>
+          <input type="text" id="first" name="first" value={first} onChange={e => setFirst(e.target.value)}/>
           <label htmlFor="last">Last name:</label>
           <input type="text" id="last" name="last" value={last} onChange={e => setLast(e.target.value)} />
           <button type="submit" >Submit</button>

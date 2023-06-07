@@ -25,9 +25,9 @@ export default function Home() {
 
     const content = await response.json();
 
-    console.log('content:', content);
+    // console.log('content:', content);
 
-    alert(content.data.tableRange);
+    // alert(content.data.tableRange); 
 
     setFirst('');
     setLast('');

@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Form from '../components/Form'
 import Hero from '../components/Hero'
 import Mission from '../components/Mission'
+import Partner from '../components/Partner'
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <Mission />
+        <Partner />
         {/* <Form /> */}
       </main>
 

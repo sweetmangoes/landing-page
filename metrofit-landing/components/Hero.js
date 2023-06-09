@@ -22,7 +22,7 @@ export default function Hero() {
         <button className="py-4 border-4 border-[#e0e111] text-[#e0e111] w-1/2 text-2xl font-montserrat font-bold lg:text-4xl xl:text-5xl lg:w-4/6">SECURE YOUR SPOT</button>
       </div>
       <div className="h-full w-full flex items-center justify-center lg:w-1/2">
-        <img src='/images/hero.svg'></img>
+        <img className="lg:h-full lg:w-full" src='/images/hero.svg'></img>
       </div>
     </div>
   )

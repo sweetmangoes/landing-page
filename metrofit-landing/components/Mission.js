@@ -20,13 +20,13 @@ export default function Mission() {
           <i>We do this by having a platform that connects people with individual gyms and fitness classes in a seamless and convenient way.</i>
           <br /><br />
         </p>
-          <ul className="list-disc list-inside text-2xl mb-5 font-montserrat">
-            Affordable and flexible gym classes benefit both parties:
-            <li className="mt-1">People seeking such classes</li>
-            <li>
-              Gyms/instructors aiming to <span className="underline underline-offset-4">increase revenue</span> and <span className="underline underline-offset-4">build a loyal client base.</span>
-            </li>
-          </ul>
+        <ul className="list-disc list-inside text-2xl mb-5 font-montserrat">
+          Affordable and flexible gym classes benefit both parties:
+          <li className="mt-1">People seeking such classes</li>
+          <li>
+            Gyms/instructors aiming to <span className="underline underline-offset-4">increase revenue</span> and <span className="underline underline-offset-4">build a loyal client base.</span>
+          </li>
+        </ul>
         <hr className="border-black border-2" />
       </div>
     </div>

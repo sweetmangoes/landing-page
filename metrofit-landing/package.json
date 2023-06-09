@@ -20,7 +20,10 @@
     "autoprefixer": "^10.4.14",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
+<<<<<<< HEAD
     "postcss": "^8.4.24",
+=======
+>>>>>>> cab923b9a73799103ac89a6f0f757a52ecc1e2a3
     "tailwindcss": "^3.3.2",
     "typescript": "5.1.3"
   }

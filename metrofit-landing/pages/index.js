@@ -1,18 +1,20 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Form from '../components/Form'
+import Hero from '../components/Hero'
 
 export default function Home() {
 
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
 
       </Head>
 
-      <main className={styles.main}>
-        <Form />
+      <main>
+        <Hero />
+        {/* <Form /> */}
       </main>
 
       <footer className={styles.footer}>

@@ -1,7 +1,8 @@
 export default function Partner() {
 
   return (
-    <div className="bg-black h-[90vh] w-full flex flex-col">
+    <div className="bg-black w-full flex flex-col
+                    lg:p-6 lg:flex-row lg:h-[90vh]">
       <div className="h-2/3 w-full">
         HELLO
       </div>

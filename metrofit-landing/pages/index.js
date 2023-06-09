@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <link href="/dist/output.css" rel="stylesheet"/>
+        {/* <link href="/dist/output.css" rel="stylesheet"/> */}
       </Head>
 
       <h1 className="text-3xl text-red-500">

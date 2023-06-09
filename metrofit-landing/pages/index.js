@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Form from '../components/Form'
 import Hero from '../components/Hero'
+import Mission from '../components/Mission'
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
 
       <main>
         <Hero />
+        <Mission />
         {/* <Form /> */}
       </main>
 

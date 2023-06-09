@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-
+      monomaniac: ['Monomaniac One', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
     }
   },
   plugins: [],

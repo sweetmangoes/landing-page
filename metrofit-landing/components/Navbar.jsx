@@ -13,10 +13,13 @@ export default function Navbar(){
             <Link href='/'>Home</Link>
           </li>
           <li>
-            <Link href='/Partner'>Be a Partner</Link>
+            <Link href='/partner'>Be a Partner</Link>
           </li>
           <li>
-            <Link href='/Join'>Join</Link>
+            <Link href='/join'>Join</Link>
+          </li>
+          <li>
+            <Link href='/contact'>Contact</Link>
           </li>
         </ul>
 

@@ -1,8 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import Link from "next/link";
 import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 
 export default function Navbar(){
+
+  const [nav, setNav] = useState(false)
+
+  const handleNav = () => {
+    setNav(!nav)
+  }
+
   return (
     <div className="fixed left-0 top-0 w-full z-10 ease-in duration-300"> 
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4">
@@ -12,26 +19,31 @@ export default function Navbar(){
           </h1>
         </Link>
         <ul className="hidden sm:flex ">
-          <li className="p-4 font-monomaniac">
+          <li className="p-4 font-monomaniac text-3xl">
             <Link href='/'>Home</Link>
           </li>
-          <li className="p-4 font-monomaniac">
+          <li className="p-4 font-monomaniac text-3xl">
             <Link href='/partner'>Be a Partner</Link>
           </li>
-          <li className="p-4 font-monomaniac">
-            <Link href='/join'>Join</Link>
+          <li className="p-4 font-monomaniac text-3xl">
+            <Link href='/join'>Join the WaitList</Link>
           </li>
-          <li className="p-4 font-monomaniac">
+          <li className="p-4 font-monomaniac text-3xl">
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>
 
         {/* Mobile Button */}
-        <div className="block sm:hidden z-10">
-          <AiOutlineMenu size={20}/>
+        <div className="block sm:hidden z-10" onClick={handleNav}>
+          {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
         </div>
         {/* Mobile Menu */}
-        <div className="sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300">
+        <div className= {
+          nav 
+            ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300" 
+            : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+          }
+        >
         <ul>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
             <Link href='/'>Home</Link>
@@ -40,7 +52,7 @@ export default function Navbar(){
             <Link href='/partner'>Be a Partner</Link>
           </li>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
-            <Link href='/join'>Join</Link>
+            <Link href='/join'>Join the WaitList</Link>
           </li>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
             <Link href='/contact'>Contact</Link>

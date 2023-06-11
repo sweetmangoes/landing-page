@@ -6,7 +6,7 @@ export default function Navbar(){
 
   const [nav, setNav] = useState(false)
   const [color, setColor] = useState('transparent')
-  const [textColor, setTextColor] = useState('white')
+  const [textColor, setTextColor] = useState('transparent')
 
   const handleNav = () => {
     setNav(!nav)

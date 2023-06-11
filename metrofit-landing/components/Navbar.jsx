@@ -16,13 +16,14 @@ export default function Navbar(){
     const changeColor = () =>{
       if (window.scrollY >= 90){
         setColor('#ffffff');
-        setTextColor('#00000')
+        setTextColor('#00000');
       }else{
-        setColor('Transparent')
-        setTextColor('#ffffff')
+        setColor('Transparent');
+        setTextColor('#ffffff'); 
       }
-    }
-  })
+    };
+    window.addEventListener('scroll', changeColor);
+  },[]);
 
   return (
     <div style={{backgroundColor: `${color}`}} className="fixed left-0 top-0 w-full z-10 ease-in duration-300"> 

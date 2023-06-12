@@ -6,7 +6,7 @@ export default function Navbar(){
 
   const [nav, setNav] = useState(false)
   const [color, setColor] = useState('transparent')
-  const [textColor, setTextColor] = useState('white')
+  const [textColor, setTextColor] = useState('transparent')
 
   const handleNav = () => {
     setNav(!nav)
@@ -38,7 +38,7 @@ export default function Navbar(){
             <Link href='/partner'>Be a Partner</Link>
           </li>
           <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
-            <Link href='/join'>Join the WaitList</Link>
+            <Link href='/join'>Join WaitList</Link>
           </li>
           <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
             <Link href='/contact'>Contact</Link>
@@ -64,7 +64,7 @@ export default function Navbar(){
             <Link href='/partner'>Be a Partner</Link>
           </li>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
-            <Link href='/join'>Join the WaitList</Link>
+            <Link href='/join'>Join WaitList</Link>
           </li>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
             <Link href='/contact'>Contact</Link>

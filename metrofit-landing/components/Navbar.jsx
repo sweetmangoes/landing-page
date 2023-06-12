@@ -34,13 +34,13 @@ export default function Navbar(){
           </h1>
         </Link>
         <ul style={{color:`${textColor}`}}  className="hidden sm:flex ">
-          <li>
+          {/* <li>
             <Link href='/'>
               <h1 className="p-4 font-monomaniac text-3xl">
                 Home
               </h1>
             </Link>
-          </li>
+          </li> */}
           <li className="p-4 font-monomaniac text-3xl">
             <Link href='/partner'>Be a Partner</Link>
           </li>

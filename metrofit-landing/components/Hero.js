@@ -19,7 +19,10 @@ export default function Hero() {
                       lg:text-[3.1rem] lg:leading-[3.1rem]">
           Join The <span className="underline underline-offset-[8px]">Movement Community.</span>
         </p>
-        <button className="py-4 border-4 border-[#e0e111] text-[#e0e111] w-1/2 text-2xl font-montserrat font-bold lg:text-4xl xl:text-5xl lg:w-4/6">SECURE YOUR SPOT</button>
+        <button className="py-4 border-4 border-[#e0e111] text-[#e0e111] w-1/2 text-2xl font-montserrat font-bold 
+                           lg:text-3xl xl:text-5xl lg:w-4/6">
+          SECURE YOUR SPOT
+        </button>
       </div>
       <div className="h-full w-full flex items-center justify-center lg:w-1/2">
         <img className="lg:h-full lg:w-full" src='/images/hero.svg'></img>

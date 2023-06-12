@@ -58,7 +58,7 @@ export default function Navbar(){
         >
         <ul>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
-            <Link href='/'>Home</Link>
+            <Link href='/'>Home</Link> 
           </li>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
             <Link href='/partner'>Be a Partner</Link>

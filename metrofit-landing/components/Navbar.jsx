@@ -18,7 +18,7 @@ export default function Navbar(){
         setColor('black');
         setTextColor('white');
       }else{
-        setColor('Transparent');
+        setColor('transparent');
         setTextColor('transparent');
       }
     };
@@ -34,20 +34,13 @@ export default function Navbar(){
           </h1>
         </Link>
         <ul style={{color:`${textColor}`}}  className="hidden sm:flex ">
-          {/* <li>
-            <Link href='/'>
-              <h1 className="p-4 font-monomaniac text-3xl">
-                Home
-              </h1>
-            </Link>
-          </li> */}
-          <li className="p-4 font-monomaniac text-3xl">
+          <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
             <Link href='/partner'>Be a Partner</Link>
           </li>
-          <li className="p-4 font-monomaniac text-3xl">
+          <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
             <Link href='/join'>Join the WaitList</Link>
           </li>
-          <li className="p-4 font-monomaniac text-3xl">
+          <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
             <Link href='/contact'>Contact</Link>
           </li>
         </ul>

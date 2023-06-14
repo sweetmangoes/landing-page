@@ -11,7 +11,7 @@ export default function Mission() {
                       lg:w-3/5 lg:h-full lg:px-14 ">
         <h3 className="font-monomaniac mb-5
                        lg:text-[3.5rem] lg:leading-[3.5rem] 
-                       xl:text-[3rem] xl:leading-[3rem] ">
+                       xl:text-[3rem] xl:leading-[3rem] mt-4">
           MISSION
         </h3>
         <p className="font-montserrat mb-5 
@@ -24,7 +24,7 @@ export default function Mission() {
         <hr className="border-black border-2" />
         <h3 className="font-monomaniac mb-5 mt-3
                        lg:text-[3.5rem] lg:leading-[3.5rem]
-                       xl:text-[3rem] xl:leading-[3rem]">
+                       xl:text-[3rem] xl:leading-[3rem] xl:mt-0">
           VISION
         </h3>
         <p className="font-montserrat

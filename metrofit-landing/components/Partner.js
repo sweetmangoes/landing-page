@@ -3,7 +3,8 @@ export default function Partner() {
   return (
     <div className="bg-black w-full flex flex-col
                     lg:h-[90vh]">
-      <div className="h-4/5 w-full flex items-center justify-between p-10 font-montserrat">
+      <div className="w-full flex flex-col items-center justify-between p-10 font-montserrat
+                      lg:flex-row lg:h-4/5">
         <div className="flex flex-col items-center text-center">
           <img className="" src='/images/coin.svg'></img>
           <p className="text-4xl mt-3">Increase<br />Booking</p>

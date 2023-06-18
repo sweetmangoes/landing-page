@@ -34,7 +34,7 @@ export default function Form() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='h-auto w-auto'>
       <label htmlFor="first" className='sr-only'>First name:</label>
       <input value={first} onChange={e => setFirst(e.target.value)} type="text" name="first" id="first" />
       <label htmlFor="last" className='sr-only'>Last name:</label>

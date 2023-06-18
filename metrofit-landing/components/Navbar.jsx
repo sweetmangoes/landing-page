@@ -38,7 +38,7 @@ export default function Navbar(){
             <Link href='/partner'>Be a Partner</Link>
           </li>
           <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
-            <Link href='/join'>Join WaitList</Link>
+            <Link href='/waitlist'>Join WaitList</Link>
           </li>
           <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
             <Link href='/contact'>Contact</Link>

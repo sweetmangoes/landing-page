@@ -1,7 +1,7 @@
 export default function Partner (){
   return(
     <>
-    hello! 
+    hello from Partner! 
     </>
   )
 }

@@ -1,7 +1,7 @@
 export default function Contact (){
   return(
     <>
-    hello! 
+    hello from Contact! 
     </>
   )
 }

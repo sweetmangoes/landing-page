@@ -34,14 +34,33 @@ export default function Form() {
   }
 
   return (
-    <div className="bg-black text-white w-full flex flex-col">
-      <form onSubmit={handleSubmit} className='h-auto w-auto border-solid'>
-        <label htmlFor="first" className='sr-only text-black'>First name:</label>
-        <input value={first} onChange={e => setFirst(e.target.value)} type="text" name="first" id="first" />
-        <label htmlFor="last" className='sr-only'>Last name:</label>
-        <input value={last} onChange={e => setLast(e.target.value)} type="text" name="last" id="last" />
-        <button type="submit">Submit</button>
+    <div className="bg-white text-black w-full flex flex-col">
+      <form className='border-solid'>
+          <div className='flex flex-col'>
+            <label> Full Name </label>
+            <input placeholder='John Doe' />
+          </div>
+          <div className='flex flex-col'>
+            <label> Email </label>
+            <input placeholder='johndoe@gmail.com' />
+          </div>
+          <div className='flex flex-col'>
+            <label> Phone </label>
+            <input placeholder='(XXX)XXX-XXXX'/>
+          </div>
+          <button className='bg-yellow'>Let's Talk</button>
+
+          <p> </p>
+
       </form>
     </div>
   )
 }
+
+{/* <form onSubmit={handleSubmit} className='h-auto w-auto border-solid'>
+  <label htmlFor="first" className='sr-only text-black'>First name:</label>
+  <input value={first} onChange={e => setFirst(e.target.value)} type="text" name="first" id="first" />
+  <label htmlFor="last" className='sr-only'>Last name:</label>
+  <input value={last} onChange={e => setLast(e.target.value)} type="text" name="last" id="last" />
+  <button type="submit">Submit</button>
+</form> */}

@@ -34,23 +34,36 @@ export default function Form() {
   }
 
   return (
-    <div className="bg-white text-black w-full flex flex-col">
+    <div className="bg-stone-100 text-black flex flex-col w-96 p-10 rounded-lg">
       <form className='border-solid'>
-          <div className='flex flex-col'>
+          <div className='flex flex-col font-monomaniac'>
             <label> Full Name </label>
-            <input placeholder='John Doe' />
+            <input placeholder=' John Doe' />
           </div>
-          <div className='flex flex-col'>
+          <br/>
+          <div className='flex flex-col font-monomaniac'>
             <label> Email </label>
-            <input placeholder='johndoe@gmail.com' />
+            <input placeholder=' johndoe@gmail.com' />
           </div>
-          <div className='flex flex-col'>
+          <br/>
+          <div className='flex flex-col font-monomaniac'>
             <label> Phone </label>
-            <input placeholder='(XXX)XXX-XXXX'/>
+            <input placeholder=' (XXX)XXX-XXXX'/>
           </div>
-          <button className='bg-yellow'>Let's Talk</button>
+          <br/>
+          <button className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 font-monomaniac text-white p-1 text- base'>
+            Let's Talk
+          </button>
+          <div className='text-xs italic flex flex-col space-y-2'>
+            <br />
+            <p>
+              We're committed to your privacy. MetroFit uses the information you provide to us to contact you about our services.
+            </p>
+            <p className='text-sky-500'> 
+              View Privacy Policy 
+            </p>
 
-          <p> </p>
+          </div>
 
       </form>
     </div>

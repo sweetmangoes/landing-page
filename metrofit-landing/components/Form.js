@@ -40,25 +40,25 @@ export default function Form() {
             <label className='font-monomaniac text-lg'> 
               Full Name 
             </label>
-            <input placeholder=' John Doe' className='bg-white font-montserrat p-2'/>
+            <input placeholder=' John Doe' className='bg-white font-montserrat p-2 rounded-lg'/>
           </div>
           <br/>
           <div className='flex flex-col'>
             <label className='font-monomaniac text-lg'> 
               Email
             </label>
-            <input placeholder=' johndoe@gmail.com'  className='bg-white font-montserrat p-2'/>
+            <input placeholder=' johndoe@gmail.com'  className='bg-white font-montserrat p-2 rounded-lg'/>
           </div>
           <br/>
           <div className='flex flex-col'>
             <label className='font-monomaniac text-lg'> 
               Phone 
             </label>
-            <input placeholder=' (XXX) XXX - XXXX' className='bg-white font-montserrat p-2'/>
+            <input placeholder=' (XXX) XXX - XXXX' className='bg-white font-montserrat p-2 rounded-lg'/>
           </div>
           <br/>
-          <button className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 font-monomaniac text-white p-1 text-lg'>
-            Let's Talk
+          <button className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 hover:text-black font-monomaniac text-white p-1 text-lg'>
+            LET'S TALK
           </button>
           <div className='text-xs italic flex flex-col space-y-2'>
             <br />

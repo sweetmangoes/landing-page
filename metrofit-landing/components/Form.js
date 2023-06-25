@@ -36,22 +36,28 @@ export default function Form() {
   return (
     <div className="bg-stone-100 text-black flex flex-col w-96 p-10 rounded-lg">
       <form className='border-solid'>
-          <div className='flex flex-col font-monomaniac'>
-            <label> Full Name </label>
-            <input placeholder=' John Doe' />
+          <div className='flex flex-col'>
+            <label className='font-monomaniac text-lg'> 
+              Full Name 
+            </label>
+            <input placeholder=' John Doe' className='bg-white font-montserrat p-2'/>
           </div>
           <br/>
-          <div className='flex flex-col font-monomaniac'>
-            <label> Email </label>
-            <input placeholder=' johndoe@gmail.com' />
+          <div className='flex flex-col'>
+            <label className='font-monomaniac text-lg'> 
+              Email
+            </label>
+            <input placeholder=' johndoe@gmail.com'  className='bg-white font-montserrat p-2'/>
           </div>
           <br/>
-          <div className='flex flex-col font-monomaniac'>
-            <label> Phone </label>
-            <input placeholder=' (XXX)XXX-XXXX'/>
+          <div className='flex flex-col'>
+            <label className='font-monomaniac text-lg'> 
+              Phone 
+            </label>
+            <input placeholder=' (XXX) XXX - XXXX' className='bg-white font-montserrat p-2'/>
           </div>
           <br/>
-          <button className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 font-monomaniac text-white p-1 text- base'>
+          <button className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 font-monomaniac text-white p-1 text-lg'>
             Let's Talk
           </button>
           <div className='text-xs italic flex flex-col space-y-2'>

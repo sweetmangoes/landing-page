@@ -23,7 +23,7 @@ export default function Partner() {
       </div>
       <div className="h-1/5 w-full flex justify-center items-center
                       lg:px-10">
-        <button className="py-4 border-4 border-[#e0e111] text-[#e0e111] w-1/2 text-2xl font-montserrat font-bold 
+        <button className="py-4 border-4 mb-3 border-[#e0e111] text-[#e0e111] w-1/2 text-2xl font-montserrat font-bold 
                            lg:text-3xl lg:w-1/3
                            xl:text-2xl">
           BE A PARTNER

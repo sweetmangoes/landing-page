@@ -23,9 +23,6 @@ export default function Home() {
         {/* <Form /> */}
       </main>
 
-      <footer className={styles.footer}>
-
-      </footer>
     </div>
   )
 }

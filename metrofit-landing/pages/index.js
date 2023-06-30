@@ -17,7 +17,6 @@ export default function Home() {
         <Mission />
         <Partner />
         <Member />
-        {/* <Form /> */}
       </main>
 
     </div>

@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 export default function Hero() {
 
   return (
@@ -20,10 +23,13 @@ export default function Hero() {
                       xl:text-[2.2rem] xl:leading-[2.2rem]">
           Join The <span className="underline underline-offset-[8px]">Movement Community.</span>
         </p>
-        <button className="py-4 border-4 border-[#e0e111] text-[#e0e111] w-1/2 text-2xl font-montserrat font-bold 
+        {/* <button className="py-4 border-4 hover:bg-amber-300 hover:text-black border-[#e0e111] text-[#e0e111] w-1/2 text-2xl font-montserrat font-bold 
+                           lg:text-3xl xl:text-4xl lg:w-4/6"> */}
+        <Link href='/waitlist' className="py-4 border-4 flex justify-center hover:bg-amber-300 hover:text-black border-[#e0e111] text-[#e0e111] w-1/2 text-2xl font-montserrat font-bold 
                            lg:text-3xl xl:text-4xl lg:w-4/6">
-          SECURE YOUR SPOT
-        </button>
+          SECURE SPOT
+        </Link>
+        {/* </button> */}
       </div>
       <div className="h-full w-full flex items-center justify-center lg:w-1/2">
         <img className="lg:h-full lg:w-full" src='/images/hero.svg'></img>

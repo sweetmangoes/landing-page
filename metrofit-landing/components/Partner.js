@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Partner() {
 
   return (
@@ -23,11 +25,12 @@ export default function Partner() {
       </div>
       <div className="h-1/5 w-full flex justify-center items-center
                       lg:px-10">
-        <button className="py-4 border-4 mb-3 border-[#e0e111] text-[#e0e111] w-1/2 text-2xl font-montserrat font-bold 
-                           lg:text-3xl lg:w-1/3
-                           xl:text-2xl">
-          BE A PARTNER
-        </button>
+              <Link className="flex justify-center py-4 border-4 mb-3 border-[#e0e111] text-[#e0e111] hover:bg-amber-300 hover:text-black w-1/2 text-2xl font-montserrat font-bold 
+            lg:text-3xl lg:w-1/3 
+            xl:text-2xl" href='/partner'>
+                BE A PARTNER
+              </Link>
+              
       </div>
     </div>
   )

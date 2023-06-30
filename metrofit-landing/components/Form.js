@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from "next/link";
 
 export default function Form() {
 
@@ -65,9 +66,9 @@ export default function Form() {
             <p>
               We're committed to your privacy. MetroFit uses the information you provide to us to contact you about our services.
             </p>
-            <p className='text-sky-500'> 
+            <Link className='text-sky-500' href='https://app.termly.io/document/privacy-policy/2ab800f8-0f3f-4a5f-9150-aca7d84591e9'> 
               View Privacy Policy 
-            </p>
+            </Link>
 
           </div>
 

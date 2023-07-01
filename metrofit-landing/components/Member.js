@@ -19,7 +19,7 @@ export default function Member() {
             
             BE A PARTNER
             </Link>
-          </div>
+           </div>
         </div>
       </div>
     </div>

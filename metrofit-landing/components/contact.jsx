@@ -1,7 +1,7 @@
 export default function Contact(){
   return(
     <div className="bg-gradient-to-r from-pink-500 via-yellow-500 to-green-500 w-full flex flex-col
-                    lg:h-[90vh]">
+                    ">
       <div className="w-full flex flex-col items-center justify-between p-10 font-montserrat h-4/5
                       lg:flex-row lg:h-4/5">
         <div className="flex flex-col">

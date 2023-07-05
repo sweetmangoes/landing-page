@@ -17,7 +17,7 @@ export default function Member() {
                            lg:text-3xl lg:w-1/3
                            xl:text-2xl">
             
-            BE A PARTNER
+            Join Waitlist
             </Link>
            </div>
         </div>

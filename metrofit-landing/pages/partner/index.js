@@ -6,7 +6,7 @@ export default function Partner(){
     <div className="bg-white w-full flex flex-row items-center justify-evenly lg:h-[90vh]">
       <div className="border-[3px] rounded-[3rem] border-black h-[90%] w-[94%] flex justify-around">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-black font-monomaniac bg-amber-300 rounded-md text-lg p-1">
+          <h1 className="text-black font-monomaniac bg-amber-300 rounded-md text-[1.5rem] p-1">
             BE A PARTNER
           </h1>
           <img className="" src='/images/partnerlogo.svg'></img>

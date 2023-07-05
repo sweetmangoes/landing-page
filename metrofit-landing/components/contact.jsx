@@ -11,11 +11,11 @@ export default function Contact(){
           <p className="text-xl lg:text-lg mt-4 text-black font-montserrat">
             To build a healthier and stronger city, we need to empower the fitness community by providing affordability, accessibility, and flexibility. 
           </p>
-          <p className="text-xl lg:text-lg mt-4 text-black font-montserrat">
+          <p className="text-xl lg:text-lg mt-4 text-black font-montserrat italic">
             Contact me for the details: christian@curate.family
           </p>
         </div>
-        <div cglassName="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center">
           <img className="" src='/images/photocontact.svg'></img>
           <p className="text-4xl mt-3 font-monomaniac text-black">Christian Alphonse, Founder</p>
         </div>

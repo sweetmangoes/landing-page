@@ -14,10 +14,10 @@ export default function Partner(){
             increase booking revenue
           </h1>
           <p className="text-black font-montserrat">
-          Be our partner to earn cash by filling empty spots in classes. 
+            Be our partner to earn cash by filling empty spots in classes. 
           </p>
           <p className="text-black font-montserrat">
-          A partner Instructor can extra cash and schedule classes on their own time. 
+            A partner Instructor can extra cash and schedule classes on their own time. 
           </p>
         </div>
         <div>

@@ -9,15 +9,14 @@ export default function Waitlist (){
               BE A MEMBER
             </h1>
             <img className="" src='/images/waitlistlogo.svg'></img>
-            <h1 className="text-white font-montserrat text-xl">
-              increase booking revenue
-            </h1>
-            <p className="text-white font-montserrat">
-              Be our partner to earn cash by filling empty spots in classes. 
-            </p>
-            <p className="text-white font-montserrat">
-              A partner Instructor can extra cash and schedule classes on their own time. 
-            </p>
+            <div className="divide-y divide-dashed text-center text-white font-montserrat text-xl">
+              <h1>
+                Access to a variety of group fitness classes in your area. 
+              </h1>
+              <h1>
+                Create groups and events for local pick-up games and sport clubs. 
+              </h1>
+            </div>
           </div>
           <div className="flex flex-col justify-center">
             <h1 className="text-white font-monomaniac text-xl text-center text-[2.5rem] pb-8"> 

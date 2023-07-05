@@ -21,7 +21,9 @@ export default function Partner(){
           </p>
         </div>
         <div className="flex flex-col justify-center">
-          <h1 className="text-black font-monomaniac text-xl text-center "> Sign up to be a partner.</h1>
+          <h1 className="text-black font-monomaniac text-xl text-center text-[2.5rem] pb-8"> 
+            Sign up to be a partner.
+          </h1>
           <Form />
         </div>     
       </div>

@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Mission from '../components/Mission'
 import Partner from '../components/Partner'
 import Member from '../components/Member'
+import Contact from '../components/contact'
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Mission />
         <Partner />
         <Member />
+        <Contact />
       </main>
 
     </div>

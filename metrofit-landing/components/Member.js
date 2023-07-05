@@ -16,7 +16,7 @@ export default function Member() {
             <Link href='./waitlist' className="py-4 rounded-lg flex justify-center hover:bg-amber-300 hover:text-black bg-black text-[#fefefe] w-1/2 text-2xl font-montserrat font-bold ml-[2.5rem]
                            lg:text-3xl lg:w-1/3
                            xl:text-2xl">
-            Join Waitlist
+            JOIN WAITLIST
             </Link>
            </div>
         </div>

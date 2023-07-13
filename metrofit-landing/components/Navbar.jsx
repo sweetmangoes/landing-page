@@ -26,7 +26,7 @@ export default function Navbar(){
   },[]);
 
   return (
-    <div style={{backgroundColor: `${color}`}} className=" fixed left-0 top-0 w-full z-10 ease-in duration-300"> 
+    <div style={{backgroundColor: `${color}`}} className=" p-2 fixed left-0 top-0 w-full z-10 ease-in duration-300"> 
       <div className="max-w-[1240px] m-auto flex justify-between items-center">
         <Link href='/'>  
           <h1 style={{color:`${textColor}`}} className="font-monomaniac text-4xl">

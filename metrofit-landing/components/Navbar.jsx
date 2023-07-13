@@ -64,7 +64,7 @@ export default function Navbar(){
             <Link href='/partner'>Be a Partner</Link>
           </li>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
-            <Link href='/join'>Join WaitList</Link>
+            <Link href='/waitlist'>Join WaitList</Link>
           </li>
           {/* <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
             <Link href='/contact'>Contact</Link>

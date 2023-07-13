@@ -12,7 +12,9 @@ export default function Home() {
 
   return (
     <div>
-
+      <br/>
+      <br/>
+      <br/>
       <main>
         <Hero />
         <Mission />

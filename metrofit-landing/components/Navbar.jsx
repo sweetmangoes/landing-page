@@ -26,23 +26,21 @@ export default function Navbar(){
   },[]);
 
   return (
-    <div style={{backgroundColor: `${color}`}} className="fixed left-0 top-0 w-full z-10 ease-in duration-300"> 
+    <div style={{backgroundColor: `${color}`}} 
+    className="fixed left-0 top-0 w-full z-10 ease-in duration-300"> 
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4">
         <Link href='/'>  
           <h1 style={{color:`${textColor}`}} className="font-monomaniac text-4xl">
             Metro Fit
           </h1>
         </Link>
-        <ul style={{color:`${textColor}`}}  className="hidden sm:flex ">
-          <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
+        <ul style={{color:`${textColor}`}}  className="hidden sm:flex">
+          <li className="p-4 font-monomaniac text-3xl rounded-full hover:text-sky-400">
             <Link href='/partner'>Be a Partner</Link>
           </li>
-          <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
+          <li className="p-4 font-monomaniac text-3xl rounded-full hover:text-sky-400">
             <Link href='/waitlist'>Join WaitList</Link>
           </li>
-          {/* <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
-            <Link href='/contact'>Contact</Link>
-          </li> */}
         </ul>
 
         {/* Mobile Button */}
@@ -66,9 +64,6 @@ export default function Navbar(){
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
             <Link href='/waitlist'>Join WaitList</Link>
           </li>
-          {/* <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
-            <Link href='/contact'>Contact</Link>
-          </li> */}
         </ul>
         </div>
       </div>

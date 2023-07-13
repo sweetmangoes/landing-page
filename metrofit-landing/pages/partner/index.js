@@ -32,6 +32,7 @@ export default function Partner(){
           </div>     
         </div>
       </div>
+      <br/>
     </div>
   )
 }

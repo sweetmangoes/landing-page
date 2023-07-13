@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer(){
   return(
-    <div className="bg-black flex flex-row justify-around space-x-96 text-white p-2 font-monomaniac text-lg">
+    <div className="bg-black flex flex-row justify-between space-x-96 text-white p-4 font-monomaniac text-lg">
       <h1>
         MetroFit is a product of Curate Inc.
       </h1>

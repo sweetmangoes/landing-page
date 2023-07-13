@@ -5,8 +5,8 @@ import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 export default function Navbar(){
 
   const [nav, setNav] = useState(false)
-  const [color, setColor] = useState('transparent')
-  const [textColor, setTextColor] = useState('transparent')
+  const [color, setColor] = useState('black')
+  const [textColor, setTextColor] = useState('yellow')
 
   const handleNav = () => {
     setNav(!nav)
@@ -18,8 +18,8 @@ export default function Navbar(){
         setColor('black');
         setTextColor('white');
       }else{
-        setColor('transparent');
-        setTextColor('transparent');
+        setColor('black');
+        setTextColor('yellow');
       }
     };
     window.addEventListener('scroll', changeColor);
@@ -40,9 +40,9 @@ export default function Navbar(){
           <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
             <Link href='/waitlist'>Join WaitList</Link>
           </li>
-          <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
+          {/* <li className="p-4 font-monomaniac text-3xl rounded-full hover:bg-slate-600">
             <Link href='/contact'>Contact</Link>
-          </li>
+          </li> */}
         </ul>
 
         {/* Mobile Button */}
@@ -66,9 +66,9 @@ export default function Navbar(){
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
             <Link href='/join'>Join WaitList</Link>
           </li>
-          <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
+          {/* <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
             <Link href='/contact'>Contact</Link>
-          </li>
+          </li> */}
         </ul>
         </div>
       </div>

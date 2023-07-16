@@ -37,11 +37,72 @@ export default function PartnerForm() {
   return (
     <div className="bg-stone-100 text-black flex flex-col w-96 p-10 rounded-lg">
       <form className='border-solid'>
-          <div className='flex flex-col'>
+        <div className='flex flex-col'>
             <label className='font-monomaniac text-lg'> 
-              Full Name 
+              Full Name*
             </label>
             <input placeholder=' John Doe' className='bg-white font-montserrat p-2 rounded-lg'/>
+          </div>
+          <br/>
+          <h1 className=' font-monomaniac text-lg'> Do you own a gym/fitness studio?*</h1>
+            <div className='flex flex-row font-montserrat'>
+              <label className='pl-2'>
+                <input
+                  type="radio"
+                  value="yes" 
+                />
+                Yes
+              </label>
+              <label className='pl-8'>
+                <input
+                  type="radio"
+                  value="no"  
+                />
+                No
+              </label>
+            </div>
+            <br/>
+            <div className='flex flex-col'>
+            <label className='font-monomaniac text-lg'> 
+              If yes, please provide website?
+            </label>
+            <input placeholder=' www.abcgym.com' className='bg-white font-montserrat p-2 rounded-lg'/>
+          </div>
+          <br/>
+          <h1 className=' font-monomaniac text-lg'> Are you an Instructor?*</h1>
+          <div className='flex flex-row font-montserrat'>
+              <label className='pl-2'>
+                <input
+                  type="radio"
+                  value="yes" 
+                />
+                Yes
+              </label>
+              <label className='pl-8'>
+                <input
+                  type="radio"
+                  value="no"  
+                />
+                No
+              </label>
+          </div>
+          <br/>
+          <h1 className=' font-monomaniac text-lg'> Preferred method of contact.*</h1>
+          <div className='flex flex-row font-montserrat'>
+              <label className='pl-2'>
+                <input
+                  type="radio"
+                  value="email" 
+                />
+                Email
+              </label>
+              <label className='pl-8'>
+                <input
+                  type="radio"
+                  value="phone"  
+                />
+                Phone
+              </label>
           </div>
           <br/>
           <div className='flex flex-col'>
@@ -57,11 +118,15 @@ export default function PartnerForm() {
             </label>
             <input placeholder=' (XXX) XXX - XXXX' className='bg-white font-montserrat p-2 rounded-lg'/>
           </div>
+
           <br/>
           <button className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 hover:text-black font-monomaniac text-white p-1 text-lg'>
             LET'S TALK
           </button>
+          <br/>
           <div className='text-xs italic flex flex-col space-y-2'>
+            <br/>
+            <p> * Required information</p>
             <br />
             <p>
               We're committed to your privacy. MetroFit uses the information you provide to us to contact you about our services.
@@ -69,9 +134,7 @@ export default function PartnerForm() {
             <Link className='text-sky-500' href='https://app.termly.io/document/privacy-policy/2ab800f8-0f3f-4a5f-9150-aca7d84591e9'> 
               View Privacy Policy 
             </Link>
-
-          </div>
-
+        </div>
       </form>
     </div>
   )

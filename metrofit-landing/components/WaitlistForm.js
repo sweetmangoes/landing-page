@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from "next/link";
 
-export default function Form() {
+export default function WaitlistForm() {
 
   const [first, setFirst] = useState('');
   const [last, setLast] = useState('');

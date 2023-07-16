@@ -1,4 +1,4 @@
-import Form from "../../components/Form"
+// import Form from "../../components/Form"
 
 export default function Partner(){
   return(
@@ -28,7 +28,7 @@ export default function Partner(){
             <h1 className="text-black font-monomaniac text-xl text-center text-[2.5rem] pb-8"> 
               Sign up to be a partner.
             </h1>
-            <Form />
+            {/* <Form /> */}
           </div>     
         </div>
       </div>

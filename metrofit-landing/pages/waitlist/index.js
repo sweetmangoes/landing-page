@@ -1,4 +1,4 @@
-import Form from "../../components/Form"
+import WaitlistForm from "../../components/WaitlistForm"
 
 export default function Waitlist (){
   return(
@@ -26,7 +26,7 @@ export default function Waitlist (){
               <h1 className="text-white font-monomaniac text-xl text-center text-[2.5rem] pb-8"> 
                 Join the Waitlist.
               </h1>
-              <Form />
+              <WaitlistForm />
             </div>     
           </div>
         </div>

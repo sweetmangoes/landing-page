@@ -3,8 +3,15 @@ import Link from "next/link";
 
 export default function PartnerForm() {
 
-  const [first, setFirst] = useState('');
-  const [last, setLast] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [studio, setStudio] = useState('');
+  const [website, setWebsite] = useState('');
+  const [instructor, setInstructor] = useState('');
+  const [method, setMethod] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('')
+
+
 
   // async function for submitting the states to the api.
   const handleSubmit = async (event) => {

@@ -3,20 +3,24 @@ import Link from "next/link";
 
 export default function WaitlistForm() {
 
-  const [first, setFirst] = useState('');
-  const [last, setLast] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [country, setCountry] = useState('');
+  const [province, setProvince] = useState('');
 
   // async function for submitting the states to the api.
   const handleSubmit = async (event) => {
     event.preventDefault(); // Remove default to ensure no rerouting
 
     const form = {
-      first,
-      last
+      fullName,
+      email,
+      country,
+      province
     }
 
     // Submit response to the api/submit.js
-    const response = await fetch('api/submit', {
+    const response = await fetch('api/waitlistsubmit', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -27,38 +31,87 @@ export default function WaitlistForm() {
 
     // Returned content from the response
     const content = await response.json();
+    console.log(`content: ${content}`)
 
     // This should be removed at a later date. Currently used to reset the forms data.
-    setFirst('');
-    setLast('');
-
+    setFullName('');
+    setEmail('');
+    setCountry('');
+    setProvince('');
   }
 
   return (
     <div className="bg-stone-100 text-black flex flex-col w-96 p-10 rounded-lg">
-      <form className='border-solid'>
+      <form className='border-solid' onSubmit={handleSubmit}>
           <div className='flex flex-col'>
-            <label className='font-monomaniac text-lg'> 
+            <label 
+              htmlFor="full name" 
+              className='font-monomaniac text-lg'
+            > 
               Full Name 
             </label>
-            <input placeholder=' John Doe' className='bg-white font-montserrat p-2 rounded-lg'/>
+            <input 
+              value={fullName} onChange={e => setFullName(e.target.value)}
+              placeholder=' John Doe' 
+              className='bg-white font-montserrat p-2 rounded-lg'
+            />
           </div>
           <br/>
           <div className='flex flex-col'>
-            <label className='font-monomaniac text-lg'> 
+            <label 
+              htmlFor='email'
+              className='font-monomaniac text-lg'
+            > 
               Email
             </label>
-            <input placeholder=' johndoe@gmail.com'  className='bg-white font-montserrat p-2 rounded-lg'/>
+            <input 
+              value={email} onChange={e => setEmail(e.target.value)}
+              placeholder=' johndoe@gmail.com'  
+              className='bg-white font-montserrat p-2 rounded-lg'
+            />
           </div>
           <br/>
-          <div className='flex flex-col'>
-            <label className='font-monomaniac text-lg'> 
-              Phone 
+          <div>
+            <label 
+              htmlFor='country'
+              for="countries" 
+              className='font-monomaniac text-lg'
+            >
+              Select your country.* 
             </label>
-            <input placeholder=' (XXX) XXX - XXXX' className='bg-white font-montserrat p-2 rounded-lg'/>
+              <select 
+                value={country} onChange={e => setCountry(e.target.value)}
+                id="countries" 
+                className='bg-white font-montserrat'
+              >
+                <option selected>Choose a country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+              </select>
           </div>
           <br/>
-          <button className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 hover:text-black font-monomaniac text-white p-1 text-lg'>
+          <div>
+            <label for="countries" className='font-monomaniac text-lg'>
+              Select your province/state.* 
+              </label>
+              <select 
+                value={province} onChange={e => setProvince(e.target.value)}
+                id="countries" 
+                className='bg-white font-montserrat'
+              >
+                <option selected>Choose a Province</option>
+                <option value="US">Ontario</option>
+                <option value="CA">Alberta</option>
+                <option value="FR">Quebec</option>
+              </select>
+          </div>
+          <br/>
+          <button 
+            type='submit' 
+            className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 hover:text-black font-monomaniac text-white p-1 text-lg'
+          >
             LET'S TALK
           </button>
           <div className='text-xs italic flex flex-col space-y-2'>
@@ -73,14 +126,15 @@ export default function WaitlistForm() {
           </div>
 
       </form>
+      
+        {/* <form onSubmit={handleSubmit} className='h-auto w-auto border-solid'>
+          <label htmlFor="first" className='sr-only text-black'>First name:</label>
+          <input value={first} onChange={e => setFirst(e.target.value)} type="text" name="first" id="first" />
+          <label htmlFor="last" className='sr-only'>Last name:</label>
+          <input value={last} onChange={e => setLast(e.target.value)} type="text" name="last" id="last" />
+          <button type="submit">Submit</button>
+        </form>  */}
+
     </div>
   )
 }
-
-{/* <form onSubmit={handleSubmit} className='h-auto w-auto border-solid'>
-  <label htmlFor="first" className='sr-only text-black'>First name:</label>
-  <input value={first} onChange={e => setFirst(e.target.value)} type="text" name="first" id="first" />
-  <label htmlFor="last" className='sr-only'>Last name:</label>
-  <input value={last} onChange={e => setLast(e.target.value)} type="text" name="last" id="last" />
-  <button type="submit">Submit</button>
-</form> */}

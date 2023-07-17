@@ -7,8 +7,10 @@ export default async function handler(req, res) {
   }
 
   const body = {
-    first: req.body.first,
-    last: req.body.last
+    fullName: req.body.fullName,
+    email: req.body.email, 
+    country: req.body.country,
+    province: req.body.province
   }
 
   try {
@@ -32,11 +34,16 @@ export default async function handler(req, res) {
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID,
-      range: 'A1:B1',
+      range: 'A1:D1',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [
-          [body.first, body.last]
+          [
+            body.fullName, 
+            body.email,
+            body.country,
+            body.province
+          ]
         ]
       }
     });

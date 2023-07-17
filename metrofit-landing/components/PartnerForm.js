@@ -150,7 +150,7 @@ export default function PartnerForm() {
           { alert !== 'hidden' && 
             <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
               <p class="font-monomaniac">Thanks for submitting!</p>
-              <p class="text-sm font-montserrat">We added you to the waitlist. Please allow us couple of business days to send email confirmation</p>
+              <p class="text-sm font-montserrat"> Please allow us couple of business days to send email confirmation. We will reach out to discuss more on our services.</p>
             </div>
           }
           <br />

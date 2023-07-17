@@ -7,6 +7,7 @@ export default function WaitlistForm() {
   const [email, setEmail] = useState('');
   const [country, setCountry] = useState('');
   const [province, setProvince] = useState('');
+  const [alert, setAlert] = useState('hidden')
 
   // async function for submitting the states to the api.
   const handleSubmit = async (event) => {
@@ -38,6 +39,7 @@ export default function WaitlistForm() {
     setEmail('');
     setCountry('');
     setProvince('');
+    setAlert('shows')
   }
 
   return (
@@ -53,6 +55,7 @@ export default function WaitlistForm() {
             <input 
               value={fullName} onChange={e => setFullName(e.target.value)}
               placeholder=' John Doe' 
+              required
               className='bg-white font-montserrat p-2 rounded-lg'
             />
           </div>
@@ -67,6 +70,7 @@ export default function WaitlistForm() {
             <input 
               value={email} onChange={e => setEmail(e.target.value)}
               placeholder=' johndoe@gmail.com'  
+              required
               className='bg-white font-montserrat p-2 rounded-lg'
             />
           </div>
@@ -81,10 +85,11 @@ export default function WaitlistForm() {
             </label>
               <select 
                 value={country} onChange={e => setCountry(e.target.value)}
+                required
                 id="countries" 
                 className='bg-white font-montserrat'
               >
-                <option selected>Choose a country</option>
+                <option selected value=''>Choose a country</option>
                 <option value="US">United States</option>
                 <option value="CA">Canada</option>
                 <option value="FR">France</option>
@@ -98,10 +103,11 @@ export default function WaitlistForm() {
               </label>
               <select 
                 value={province} onChange={e => setProvince(e.target.value)}
+                required
                 id="countries" 
                 className='bg-white font-montserrat'
               >
-                <option selected>Choose a Province</option>
+                <option selected value=''>Choose a Province</option>
                 <option value="US">Ontario</option>
                 <option value="CA">Alberta</option>
                 <option value="FR">Quebec</option>
@@ -114,8 +120,17 @@ export default function WaitlistForm() {
           >
             LET'S TALK
           </button>
+          
+          <br/>
+          { alert !== 'hidden' && 
+            <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
+              <p class="font-monomaniac">Thanks for submitting!</p>
+              <p class="text-sm font-montserrat">We added you to the waitlist. Please allow us couple of business days to send email confirmation</p>
+            </div>
+          }
+
+          <br />
           <div className='text-xs italic flex flex-col space-y-2'>
-            <br />
             <p>
               We're committed to your privacy. MetroFit uses the information you provide to us to contact you about our services.
             </p>
@@ -126,14 +141,6 @@ export default function WaitlistForm() {
           </div>
 
       </form>
-      
-        {/* <form onSubmit={handleSubmit} className='h-auto w-auto border-solid'>
-          <label htmlFor="first" className='sr-only text-black'>First name:</label>
-          <input value={first} onChange={e => setFirst(e.target.value)} type="text" name="first" id="first" />
-          <label htmlFor="last" className='sr-only'>Last name:</label>
-          <input value={last} onChange={e => setLast(e.target.value)} type="text" name="last" id="last" />
-          <button type="submit">Submit</button>
-        </form>  */}
 
     </div>
   )

@@ -8,9 +8,8 @@ export default async function handler(req, res) {
 
   const body = {
     fullName: req.body.fullName,
-    studio: req.body.studio,
+    type: req.body.type,
     website: req.body.website,
-    instructor: req.body.instructor,
     contact: req.body.contact,
     email: req.body.email, 
     phone: req.body.phone
@@ -37,15 +36,14 @@ export default async function handler(req, res) {
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID,
-      range: "'Partners'!A1:G1",
+      range: "'Partners'!A1:F1",
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [
           [
             body.fullName, 
-            body.studio,
+            body.type,
             body.website,
-            body.instructor,
             body.contact,
             body.email,
             body.phone

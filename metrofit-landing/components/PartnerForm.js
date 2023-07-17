@@ -4,26 +4,28 @@ import Link from "next/link";
 export default function PartnerForm() {
 
   const [fullName, setFullName] = useState('');
-  const [studio, setStudio] = useState('');
-  const [website, setWebsite] = useState('');
-  const [instructor, setInstructor] = useState('');
-  const [method, setMethod] = useState('');
+  const [type, setType] = useState('');
+  const [website, setWebsite] = useState('');;
+  const [contact, setContact] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('')
-
-
+  const [phone, setPhone] = useState('');
+  const [alert, setAlert] = useState('hidden')
 
   // async function for submitting the states to the api.
   const handleSubmit = async (event) => {
     event.preventDefault(); // Remove default to ensure no rerouting
 
     const form = {
-      first,
-      last
+      fullName,
+      type, 
+      website,
+      contact,
+      email, 
+      phone
     }
 
     // Submit response to the api/submit.js
-    const response = await fetch('api/submit', {
+    const response = await fetch('api/partnersubmit', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -36,101 +38,122 @@ export default function PartnerForm() {
     const content = await response.json();
 
     // This should be removed at a later date. Currently used to reset the forms data.
-    setFirst('');
-    setLast('');
+    setFullName('');
+    setType('');
+    setWebsite('')
+    setContact('');
+    setEmail('');
+    setPhone('');
+    setAlert('shows');
 
   }
 
   return (
     <div className="bg-stone-100 text-black flex flex-col w-96 p-10 rounded-lg">
-      <form className='border-solid'>
+      <form className='border-solid' onSubmit={handleSubmit}>
         <div className='flex flex-col'>
-            <label className='font-monomaniac text-lg'> 
+            <label 
+              htmlFor="full name"
+              className='font-monomaniac text-lg'
+            > 
               Full Name*
             </label>
-            <input placeholder=' John Doe' className='bg-white font-montserrat p-2 rounded-lg'/>
+            <input
+            type='string'
+            required
+            value={fullName} 
+            onChange={e => setFullName(e.target.value)}
+            placeholder=' John Doe' 
+            className='bg-white font-montserrat p-2 rounded-lg'/>
           </div>
           <br/>
-          <h1 className=' font-monomaniac text-lg'> Do you own a gym/fitness studio?*</h1>
-            <div className='flex flex-row font-montserrat'>
-              <label className='pl-2'>
-                <input
-                  type="radio"
-                  value="yes" 
-                />
-                Yes
+          <div>
+            <label htmlFor="type" className='font-monomaniac text-lg'>
+              Please select which one applies.* 
               </label>
-              <label className='pl-8'>
-                <input
-                  type="radio"
-                  value="no"  
-                />
-                No
-              </label>
-            </div>
+              <select 
+                value={type} 
+                onChange={e => setType(e.target.value)}
+                required
+                id="type" 
+                className='bg-white font-montserrat '
+              >
+                <option selected value=''> which one applies</option>
+                <option value="Email">Gym/fitness studio owner</option>
+                <option value="Phone">Instructor</option>
+                <option value="Both">Both</option>
+              </select>
+          </div>
             <br/>
             <div className='flex flex-col'>
             <label className='font-monomaniac text-lg'> 
               If yes, please provide website?
             </label>
-            <input placeholder=' www.abcgym.com' className='bg-white font-montserrat p-2 rounded-lg'/>
+            <input
+              value={website} 
+              type='url'
+              onChange={e => setWebsite(e.target.value)} 
+              placeholder=' www.abcgym.com' 
+              className='bg-white font-montserrat p-2 rounded-lg'
+            />
           </div>
           <br/>
-          <h1 className=' font-monomaniac text-lg'> Are you an Instructor?*</h1>
-          <div className='flex flex-row font-montserrat'>
-              <label className='pl-2'>
-                <input
-                  type="radio"
-                  value="yes" 
-                />
-                Yes
+          <div>
+            <label htmlFor="contact" className='font-monomaniac text-lg'>
+              Preferred method of Contact.* 
               </label>
-              <label className='pl-8'>
-                <input
-                  type="radio"
-                  value="no"  
-                />
-                No
-              </label>
-          </div>
-          <br/>
-          <h1 className=' font-monomaniac text-lg'> Preferred method of contact.*</h1>
-          <div className='flex flex-row font-montserrat'>
-              <label className='pl-2'>
-                <input
-                  type="radio"
-                  value="email" 
-                />
-                Email
-              </label>
-              <label className='pl-8'>
-                <input
-                  type="radio"
-                  value="phone"  
-                />
-                Phone
-              </label>
+              <select 
+                value={contact} 
+                onChange={e => setContact(e.target.value)}
+                required
+                id="contact" 
+                className='bg-white font-montserrat text-gray-400'
+              >
+                <option selected value=''> Select method of contact</option>
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
+                <option value="Both">Both</option>
+              </select>
           </div>
           <br/>
           <div className='flex flex-col'>
             <label className='font-monomaniac text-lg'> 
               Email
             </label>
-            <input placeholder=' johndoe@gmail.com'  className='bg-white font-montserrat p-2 rounded-lg'/>
+            <input 
+              type="email"
+              value={email} 
+              onChange={e => setEmail(e.target.value)}
+              placeholder=' johndoe@gmail.com'  
+              className='bg-white font-montserrat p-2 rounded-lg'
+            />
           </div>
           <br/>
           <div className='flex flex-col'>
             <label className='font-monomaniac text-lg'> 
               Phone 
             </label>
-            <input placeholder=' (XXX) XXX - XXXX' className='bg-white font-montserrat p-2 rounded-lg'/>
+            <input 
+              type="tel"
+              value={phone} 
+              onChange={e => setPhone(e.target.value)}
+              placeholder=' XXX - XXX - XXXX' 
+              className='bg-white font-montserrat p-2 rounded-lg'
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
           </div>
-
           <br/>
           <button className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 hover:text-black font-monomaniac text-white p-1 text-lg'>
             LET'S TALK
           </button>
           <br/>
+          { alert !== 'hidden' && 
+            <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
+              <p class="font-monomaniac">Thanks for submitting!</p>
+              <p class="text-sm font-montserrat">We added you to the waitlist. Please allow us couple of business days to send email confirmation</p>
+            </div>
+          }
+          <br />
           <div className='text-xs italic flex flex-col space-y-2'>
             <br/>
             <p> * Required information</p>
@@ -146,11 +169,3 @@ export default function PartnerForm() {
     </div>
   )
 }
-
-{/* <form onSubmit={handleSubmit} className='h-auto w-auto border-solid'>
-  <label htmlFor="first" className='sr-only text-black'>First name:</label>
-  <input value={first} onChange={e => setFirst(e.target.value)} type="text" name="first" id="first" />
-  <label htmlFor="last" className='sr-only'>Last name:</label>
-  <input value={last} onChange={e => setLast(e.target.value)} type="text" name="last" id="last" />
-  <button type="submit">Submit</button>
-</form> */}

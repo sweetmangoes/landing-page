@@ -50,7 +50,7 @@ export default function WaitlistForm() {
               htmlFor="full name" 
               className='font-monomaniac text-lg'
             > 
-              Full Name 
+              Full Name*
             </label>
             <input 
               value={fullName} onChange={e => setFullName(e.target.value)}
@@ -68,9 +68,11 @@ export default function WaitlistForm() {
               Email
             </label>
             <input 
-              value={email} onChange={e => setEmail(e.target.value)}
+              value={email} 
+              onChange={e => setEmail(e.target.value)}
               placeholder=' johndoe@gmail.com'  
               required
+              type='email'
               className='bg-white font-montserrat p-2 rounded-lg'
             />
           </div>
@@ -131,6 +133,7 @@ export default function WaitlistForm() {
 
           <br />
           <div className='text-xs italic flex flex-col space-y-2'>
+            <p> * Required information</p>
             <p>
               We're committed to your privacy. MetroFit uses the information you provide to us to contact you about our services.
             </p>

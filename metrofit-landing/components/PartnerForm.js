@@ -76,12 +76,12 @@ export default function PartnerForm() {
             onChange={e => setType(e.target.value)}
             required
             id="type"
-            className='bg-white font-montserrat mt-2'
+            className='bg-white font-montserrat mt-2 text-gray-400'
           >
-            <option selected value=''> which one applies</option>
-            <option value="Email">Gym/fitness studio owner</option>
-            <option value="Phone">Instructor</option>
-            <option value="Both">Both</option>
+            <option selected value=''>Which one applies?</option>
+            <option value="Email" className='text-black'>Gym/fitness studio owner</option>
+            <option value="Phone" className='text-black'>Instructor</option>
+            <option value="Both" className='text-black'>Both</option>
           </select>
         </div>
         <div className='flex flex-col'>
@@ -109,9 +109,9 @@ export default function PartnerForm() {
             className='bg-white font-montserrat text-gray-400 mt-2'
           >
             <option selected value=''> Select method of contact</option>
-            <option value="Email">Email</option>
-            <option value="Phone">Phone</option>
-            <option value="Both">Both</option>
+            <option value="Email" className='text-black'>Email</option>
+            <option value="Phone" className='text-black'>Phone</option>
+            <option value="Both" className='text-black'>Both</option>
           </select>
         </div>
         <div className='flex flex-col'>

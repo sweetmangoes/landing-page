@@ -1,14 +1,14 @@
 import PartnerForm from "../../components/PartnerForm"
 
-export default function Partner(){
-  return(
+export default function Partner() {
+  return (
     <div>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="bg-white w-full flex flex-row items-center justify-evenly lg:h-[90vh]">
-        <div className="border-[3px] rounded-[3rem] border-black h-[90%] w-[94%] flex justify-around">
+        <div className="border-[3px] rounded-[3rem] border-black h-[90%] w-[94%] flex justify-around p-5">
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-black font-monomaniac bg-amber-300 rounded-md text-[1.5rem] p-1">
               BE A PARTNER
@@ -18,21 +18,21 @@ export default function Partner(){
               increase booking revenue
             </h1>
             <p className="text-black font-montserrat">
-              Be our partner to earn cash by filling empty spots in classes. 
+              Be our partner to earn cash by filling empty spots in classes.
             </p>
             <p className="text-black font-montserrat">
-              A partner Instructor can extra cash and schedule classes on their own time. 
+              A partner Instructor can extra cash and schedule classes on their own time.
             </p>
           </div>
-          <div className="flex flex-col justify-center">
-            <h1 className="text-black font-monomaniac text-xl text-center text-[2.5rem] pb-8"> 
+          <div className="flex flex-col ">
+            <h1 className="text-black font-monomaniac text-xl text-center text-[2.5rem] h-[5%]">
               Sign up to be a partner.
             </h1>
-            <PartnerForm/>
-          </div>     
+            <PartnerForm />
+          </div>
         </div>
       </div>
-      <br/>
+      <br />
     </div>
   )
 }

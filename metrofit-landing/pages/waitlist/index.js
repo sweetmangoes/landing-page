@@ -9,26 +9,28 @@ export default function Waitlist (){
         <div className="bg-black w-full flex flex-row items-center justify-evenly p-2 lg:h-[90vh]">
           <div className="border-[3px] rounded-[3rem] border-amber-300 h-auto lg:h-[90%] w-[94%] flex flex-col sm:flex-row justify-around p-5">
             <div className="flex flex-col items-center justify-center">
-              <h1 className="text-black font-monomaniac bg-amber-300 rounded-md text-[1.5rem] p-1">
-                BE A MEMBER
+              <h1 className="text-black font-monomaniac bg-gray-100 rounded-md text-[1.5rem] p-1">
+              As a member, you can: 
               </h1>
               <img className="" src='/images/waitlistlogo.svg'></img>
-              <div className="divide-y divide-dashed text-center text-white font-montserrat text-xl">
+              <div className=" mt-2   text-white font-montserrat text-xl space-y-1">
                 <h1>
-                  Access to a variety of group fitness classes (for all ages) in your area. 
+                  1. Access a variety of group fitness classes (for all ages) in your area. 
                 </h1>
                 <h1>
-                  Create and join local fitness community. 
+                  2. Participate in local active events, leagues and sport clubs. 
                 </h1>
                 <h1>
-                Participate in local active events, leagues and sport clubs.
+                  3. Create and join local fitness community.
                 </h1>
+                <br/>
               </div>
             </div>
             <div className="flex flex-col mr-auto ml-auto">
-              <h1 className="text-white font-monomaniac text-xl text-center text-[2.5rem] pb-8"> 
+              <h1 className="text-black rounded-md p-1 bg-amber-300 font-monomaniac text-xl text-center text-[2.5rem]"> 
                 Join the Waitlist.
               </h1>
+              <br/>
               <WaitlistForm />
             </div>     
           </div>

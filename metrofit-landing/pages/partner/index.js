@@ -11,23 +11,24 @@ export default function Partner() {
         <div className="border-[3px] rounded-[3rem] border-black h-auto lg:h-[90%] w-[94%] flex flex-col sm:flex-row justify-around p-5">
           <div className="flex flex-col items-center justify-center sm:w-[20rem] md:w-[30rem] lg:w-[38rem] text-center text-black">
             <h1 className=" font-monomaniac bg-amber-300 rounded-md text-[1.5rem] p-1">
-              BE A PARTNER
+              Increase Your Booking Revenue
             </h1>
             <img className="" src='/images/partnerlogo.svg'></img>
-            <h1 className="font-montserrat text-xl">
-              Increase Booking Revenue
-            </h1>
-            <p className="font-montserrat">
-              Be our Gym Partner to earn cash by filling empty spots in classes.
-            </p>
-            <p className="font-montserrat">
-              Also, a Verified Instructor can extra cash and schedule classes on their own time.
-            </p>
+            <div className="font-montserrat space-y-1">
+              <h1 className="">
+                Our Gym Partner can earn cash by filling empty spots in classes.
+              </h1>
+              <h1 className="">
+              Our Verified Instructor can earn extra cash and schedule classes on their own time.
+              </h1>
+            </div>
           </div>
+          <br/>
           <div className="flex flex-col ">
-            <h1 className="text-black font-monomaniac text-xl text-center text-[2.5rem] h-[5%] mb-3 md:mb-0">
+            <h1 className="text-white bg-black rounded-md p-1 font-monomaniac text-xl text-center text-[2.5rem] h-[5%] mb-3 md:mb-0">
               Sign up to be a partner.
             </h1>
+            <br/>
             <PartnerForm />
           </div>
         </div>

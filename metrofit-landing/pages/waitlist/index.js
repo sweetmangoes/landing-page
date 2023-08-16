@@ -13,7 +13,7 @@ export default function Waitlist (){
               As a member, you can: 
               </h1>
               <img className="" src='/images/waitlistlogo.svg'></img>
-              <div className=" mt-2   text-white font-montserrat text-xl space-y-1">
+              <div className=" mt-2 -top-7 text-white font-montserrat text-xl space-y-1">
                 <h1>
                   1. Access a variety of group fitness classes (for all ages) in your area. 
                 </h1>

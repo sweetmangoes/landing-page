@@ -14,12 +14,12 @@ export default function Partner() {
               Increase Your Booking Revenue
             </h1>
             <img className="" src='/images/partnerlogo.svg'></img>
-            <div className="font-montserrat space-y-1">
-              <h1 className="">
-                Our Gym Partner can earn cash by filling empty spots in classes.
+            <div className="font-montserrat space-y-2">
+              <h1 className="bg-green-400 rounded-md p-1">
+                  Gym Partner can <a className=" underline">earn cash</a> by filling empty spots in classes.
               </h1>
-              <h1 className="">
-              Our Verified Instructor can earn extra cash and schedule classes on their own time.
+              <h1 className="bg-sky-100 rounded-md p-1 text-sky-900">
+                Verified Instructor can earn extra cash and schedule classes on their own time.
               </h1>
             </div>
           </div>

@@ -15,10 +15,13 @@ export default function Waitlist (){
               <img className="" src='/images/waitlistlogo.svg'></img>
               <div className="divide-y divide-dashed text-center text-white font-montserrat text-xl">
                 <h1>
-                  Access to a variety of group fitness classes in your area. 
+                  Access to a variety of group fitness classes (for all ages) in your area. 
                 </h1>
                 <h1>
-                  Create groups. Join local active events, leagues and sport clubs. 
+                  Create and join local fitness community. 
+                </h1>
+                <h1>
+                Participate in local active events, leagues and sport clubs.
                 </h1>
               </div>
             </div>

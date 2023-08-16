@@ -125,7 +125,7 @@ export default function WaitlistForm() {
           
           <br/>
           { alert !== 'hidden' && 
-            <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
+            <div class="bg-blue-100 border-t border-b border-sky-500 text-sky-700 px-4 py-3" role="alert">
               <p class="font-monomaniac">Thanks for submitting!</p>
               <p class="text-sm font-montserrat">We added you to the waitlist. Please allow us couple of business days to send email confirmation</p>
             </div>
@@ -137,7 +137,7 @@ export default function WaitlistForm() {
             <p>
               We're committed to your privacy. MetroFit uses the information you provide to us to contact you about our services.
             </p>
-            <Link className='text-sky-500' href='https://app.termly.io/document/privacy-policy/2ab800f8-0f3f-4a5f-9150-aca7d84591e9'> 
+            <Link className='text-sky-500 hover:underline' href='https://app.termly.io/document/privacy-policy/2ab800f8-0f3f-4a5f-9150-aca7d84591e9'> 
               View Privacy Policy 
             </Link>
 

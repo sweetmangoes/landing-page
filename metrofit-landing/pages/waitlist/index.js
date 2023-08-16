@@ -18,7 +18,7 @@ export default function Waitlist (){
                   Access to a variety of group fitness classes in your area. 
                 </h1>
                 <h1>
-                  Create groups and events for local pick-up games and sport clubs. 
+                  Create groups. Join local active events, leagues and sport clubs. 
                 </h1>
               </div>
             </div>

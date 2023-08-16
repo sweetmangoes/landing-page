@@ -7,7 +7,7 @@ export default function Waitlist (){
       <br/>
       <br/>
         <div className="bg-black w-full flex flex-row items-center justify-evenly lg:h-[90vh]">
-          <div className="border-[3px] rounded-[3rem] border-amber-300 h-[90%] w-[94%] flex justify-around">
+          <div className="border-[3px] rounded-[3rem] border-amber-300 h-auto lg:h-[90%] w-[94%] flex flex-col sm:flex-row justify-around p-5">
             <div className="flex flex-col items-center justify-center">
               <h1 className="text-black font-monomaniac bg-amber-300 rounded-md text-[1.5rem] p-1">
                 BE A MEMBER
@@ -22,7 +22,7 @@ export default function Waitlist (){
                 </h1>
               </div>
             </div>
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col mr-auto ml-auto">
               <h1 className="text-white font-monomaniac text-xl text-center text-[2.5rem] pb-8"> 
                 Join the Waitlist.
               </h1>

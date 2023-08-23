@@ -12,6 +12,10 @@ export default function Navbar(){
     setNav(!nav)
   }
 
+  const closeMobileMenu = () => {
+    setNav(false)
+  }
+
   useEffect(() => {
     const changeColor = () =>{
       if (window.scrollY >= 200){
@@ -50,19 +54,21 @@ export default function Navbar(){
         {/* Mobile Menu */}
         <div className= {
           nav 
-            ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300" 
-            : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+            ? 
+            "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300" 
+            : 
+            "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
           }
         >
         <ul>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
-            <Link href='/'>Home</Link> 
+            <Link href='/' onClick={closeMobileMenu}>Home</Link> 
           </li>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
-            <Link href='/partner'>Be a Partner</Link>
+            <Link href='/partner' onClick={closeMobileMenu}>Be a Partner</Link>
           </li>
           <li className="p-4 font-monomaniac text-4xl hover:text-gray-500">
-            <Link href='/waitlist'>Join WaitList</Link>
+            <Link href='/waitlist' onClick={closeMobileMenu}>Join WaitList</Link>
           </li>
         </ul>
         </div>

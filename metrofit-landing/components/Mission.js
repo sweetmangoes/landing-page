@@ -1,7 +1,7 @@
 export default function Mission() {
 
   return (
-    <div className="bg-white text-black w-full flex flex-col
+    <div className="bg-white text-black w-full flex flex-col items-center
                     lg:p-6 lg:flex-row">
       <div className="h-1/2 w-full flex items-center justify-center 
                       lg:w-1/2 lg:h-full">

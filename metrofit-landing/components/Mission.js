@@ -2,7 +2,7 @@ export default function Mission() {
 
   return (
     <div className="bg-white text-black w-full flex flex-col
-                    lg:p-6 lg:flex-row lg:h-[90vh]">
+                    lg:p-6 lg:flex-row">
       <div className="h-1/2 w-full flex items-center justify-center 
                       lg:w-1/2 lg:h-full">
         <img className=" lg:w-full" src='/images/Mission.svg'></img>

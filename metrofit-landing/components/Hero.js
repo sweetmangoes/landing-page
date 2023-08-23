@@ -5,7 +5,7 @@ export default function Hero() {
 
   return (
     <div className="bg-black w-full flex flex-col
-                    lg:p-6 lg:flex-row lg:h-[90vh]">
+                    lg:p-6 lg:flex-row">
       <div className="w-full flex flex-col pt-6 pl-5 items-center
                       lg:w-1/2 lg:px-10 lg:items-start">
         <h1 className="font-monomaniac text-[10rem] leading-[8rem] 

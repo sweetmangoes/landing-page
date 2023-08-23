@@ -43,7 +43,7 @@ export default function WaitlistForm() {
   }
 
   return (
-    <div className="bg-stone-100 text-black flex flex-col w-96 p-10 rounded-lg">
+    <div className="bg-stone-100 text-black flex flex-col justify-center sm:w-[20rem] md:w-[25rem] lg:w-[30rem] xl:w-[40rem] p-10 rounded-lg h-[93%]">
       <form className='border-solid' onSubmit={handleSubmit}>
           <div className='flex flex-col'>
             <label 

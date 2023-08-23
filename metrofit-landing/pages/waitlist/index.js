@@ -26,8 +26,8 @@ export default function Waitlist (){
                 <br/>
               </div>
             </div>
-            <div className="flex flex-col mr-auto ml-auto">
-              <h1 className="text-black rounded-md p-1 bg-amber-300 font-monomaniac text-xl text-center text-[2.5rem]"> 
+            <div className="flex flex-col">
+              <h1 className="text-black rounded-md p-1 bg-amber-300 font-monomaniac text-xl text-center text-[2.5rem] h-[5%] mb-3 md:mb-0"> 
                 Join the Waitlist.
               </h1>
               <br/>

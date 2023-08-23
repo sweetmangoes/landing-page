@@ -16,10 +16,10 @@ export default function Partner() {
             <img className="" src='/images/partnerlogo.svg'></img>
             <div className="font-montserrat space-y-2 p-2">
               <h1 className="bg-green-100 rounded-md p-4">
-                  A <a className="italic text-green-900">Gym Partner</a> can <a className=" font-semibold"> <a className="underline">earn cash</a> by <a className="italic">listing empty spots in classes.</a></a>
+                  A <a className="italic text-green-900">Gym Partner</a> can <a className="underline">earn cash</a> by <a className="italic">listing empty spots in classes.</a>
               </h1>
               <h1 className="bg-sky-100 rounded-md p-4 text-sky-900">
-                <a className="italic"> Our <a className="underline">Verified Instructor</a></a> can <a className="font-semibold text-black">earn extra cash by coaching classes. </a> 
+                Our <a className="italic">Verified Instructor</a> can <a className="font-semibold underline text-black">earn extra cash by coaching classes. </a> 
               </h1>
             </div>
           </div>

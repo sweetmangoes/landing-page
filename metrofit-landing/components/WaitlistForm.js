@@ -182,7 +182,7 @@ export default function WaitlistForm() {
             type='submit' 
             className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 hover:text-black font-monomaniac text-white p-1 text-lg'
           >
-            LET'S TALK
+            JOIN
           </button>
           
           <br/>

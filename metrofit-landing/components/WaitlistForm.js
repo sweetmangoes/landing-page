@@ -91,7 +91,7 @@ export default function WaitlistForm() {
                 id="countries" 
                 className='bg-white font-montserrat'
               >
-                <option selected value=''>Choose a country</option>
+                <option selected value=''>Country</option>
                 <option value="US">United States</option>
                 <option value="CA">Canada</option>
                 <option value="FR">France</option>

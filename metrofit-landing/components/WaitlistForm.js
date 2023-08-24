@@ -110,6 +110,7 @@ export default function WaitlistForm() {
                 className='bg-white font-montserrat'
               >
                 <option selected value=''> Provinces / States</option>
+                {/* Canada */}
                 <option value="AB">Alberta</option>
                 <option value="BC">British Columbia</option>
                 <option value="MA">Manitoba</option>
@@ -123,6 +124,7 @@ export default function WaitlistForm() {
                 <option value="NT">Northwest Territories</option>
                 <option value="NU">Nunavut</option>
                 <option value="YU">Yukon</option>
+                {/* United states */}
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>

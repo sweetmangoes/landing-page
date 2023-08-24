@@ -6,6 +6,7 @@ export default function Waitlist() {
       <br />
       <br />
       <br />
+      <br/>
       <div className="bg-black w-full flex flex-row items-center justify-evenly p-2 lg:">
         <div className="border-[3px] rounded-[3rem] border-amber-300 h-auto lg:h-[90%] w-[94%] flex flex-col sm:flex-row justify-around p-5">
           <div className="flex flex-col items-center justify-center">

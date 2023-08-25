@@ -1,7 +1,7 @@
 import { google } from 'googleapis';
 
 export default async function handler(req, res) {
-  
+
   console.log(`hello from waitlist submit`)
 
   if (req.method !== 'POST') {
@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
   const body = {
     fullName: req.body.fullName,
-    email: req.body.email, 
+    email: req.body.email,
     country: req.body.country,
     province: req.body.province
   }
@@ -30,6 +30,8 @@ export default async function handler(req, res) {
       ]
     });
 
+    console.log(`auth: ${auth[credentials].private_key}`);
+
     const sheets = google.sheets({
       auth,
       version: 'v4',
@@ -43,7 +45,7 @@ export default async function handler(req, res) {
       requestBody: {
         values: [
           [
-            body.fullName, 
+            body.fullName,
             body.email,
             body.country,
             body.province

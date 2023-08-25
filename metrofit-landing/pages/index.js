@@ -11,10 +11,10 @@ export default function Home() {
 
   return (
     <div>
-      <br/>
-      <br/>
-      <br/>
-      <main>
+      <br />
+      <br />
+      <br />
+      <main className="overflow-x-hidden">
         <Hero />
         <Mission />
         <Partner />

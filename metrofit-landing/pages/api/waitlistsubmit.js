@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL,
-        private_key: atob(process.env.NEXT_PUBLIC_GOOGLE_PRIVATE_KEY)
+        private_key: process.env.NEXT_PUBLIC_GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')
       },
       scopes: [
         'https://www.googleapis.com/auth/drive',
@@ -30,7 +30,7 @@ export default async function handler(req, res) {
       ]
     });
 
-    console.log(`client_email: ${process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL}`);
+    console.log(`private_key: ${process.env.NEXT_PUBLIC_GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')}`);
 
     const sheets = google.sheets({
       auth,

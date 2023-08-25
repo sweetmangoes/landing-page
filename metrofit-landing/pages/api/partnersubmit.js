@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     type: req.body.type,
     website: req.body.website,
     contact: req.body.contact,
-    email: req.body.email, 
+    email: req.body.email,
     phone: req.body.phone
   }
 
@@ -43,7 +43,7 @@ export default async function handler(req, res) {
       requestBody: {
         values: [
           [
-            body.fullName, 
+            body.fullName,
             body.type,
             body.website,
             body.contact,

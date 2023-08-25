@@ -13,7 +13,7 @@ export default function Hero() {
                        xl:text-[14rem] xl:leading-[12rem]">
           Metro
         </h1>
-        <h1 className="font-monomaniac text-[10rem] leading-[8rem] mb-14 
+        <h1 className="font-monomaniac text-[8rem] leading-[6rem] mb-14 
                        lg:text-[14rem] lg:leading-[10rem] lg:mb-14 
                        xl:text-[14rem] xl:leading-[12rem]">
           Fit

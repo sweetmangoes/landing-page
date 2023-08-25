@@ -2,6 +2,8 @@ import { google } from 'googleapis';
 
 export default async function handler(req, res) {
 
+  console.log(`hello from partner submit`)
+
   if (req.method !== 'POST') {
     return res.status('405').send({ message: 'Only POST requests are allowed' });
   }

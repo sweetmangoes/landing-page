@@ -38,6 +38,8 @@ export default async function handler(req, res) {
       spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID
     });
 
+    console.log(`sheets: ${Object.keys(sheets)}`);
+
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID,
       range: 'A1:D1',

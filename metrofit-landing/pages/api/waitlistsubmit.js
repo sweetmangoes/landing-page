@@ -30,7 +30,7 @@ export default async function handler(req, res) {
       ]
     });
 
-    console.log(`auth: ${auth[credentials].private_key}`);
+    console.log(`auth: ${auth.credentials[0]}`);
 
     const sheets = google.sheets({
       auth,

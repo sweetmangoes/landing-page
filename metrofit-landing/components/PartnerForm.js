@@ -140,7 +140,7 @@ export default function PartnerForm() {
           />
         </div>
         <button className='bg-orange-600 rounded-lg w-full hover:bg-orange-300 hover:text-black font-monomaniac text-white p-1 text-lg my-3'>
-          LET'S TALK
+          {`LET'S TALK`}
         </button>
         {alert !== 'hidden' &&
           <div class="bg-blue-100 border-t border-b border-sky-500 text-sky-700 px-4 py-3" role="alert">

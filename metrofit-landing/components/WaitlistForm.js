@@ -197,7 +197,7 @@ export default function WaitlistForm() {
           <div className='text-xs italic flex flex-col space-y-2'>
             <p> * Required information</p>
             <p>
-              We're committed to your privacy. MetroFit uses the information you provide to us to contact you about our services.
+              {`We're committed to your privacy. MetroFit uses the information you provide to us to contact you about our services.`}
             </p>
             <Link className='text-sky-500 hover:underline' href='https://app.termly.io/document/privacy-policy/2ab800f8-0f3f-4a5f-9150-aca7d84591e9'> 
               View Privacy Policy 

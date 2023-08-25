@@ -1,8 +1,8 @@
 import { google } from 'googleapis';
-console.log(`hello from waitlist submit`)
 
 export default async function handler(req, res) {
-
+  
+  console.log(`hello from waitlist submit`)
 
   if (req.method !== 'POST') {
     return res.status('405').send({ message: 'Only POST requests are allowed' });

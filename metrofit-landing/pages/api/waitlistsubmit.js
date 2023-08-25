@@ -30,7 +30,7 @@ export default async function handler(req, res) {
       ]
     });
 
-    console.log(`auth: ${auth.credentials[0]}`);
+    console.log(`client_email: ${process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL}`);
 
     const sheets = google.sheets({
       auth,

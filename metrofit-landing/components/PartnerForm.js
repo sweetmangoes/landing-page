@@ -18,7 +18,7 @@ export default function PartnerForm() {
 
     // Check if the URL lacks a scheme, then prepend "http://"
     if (!userInput.startsWith('http://') && !userInput.startsWith('https://')) {
-      normalizedUrl = `https://${userInput}`;
+      normalizedUrl = `http://${userInput}`;
     }
 
     setWebsite(normalizedUrl);

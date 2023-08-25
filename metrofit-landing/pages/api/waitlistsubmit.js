@@ -2,7 +2,7 @@ import { google } from 'googleapis';
 
 export default async function handler(req, res) {
 
-  console.log(`hello from waitlist submit`)
+
 
   if (req.method !== 'POST') {
     return res.status('405').send({ message: 'Only POST requests are allowed' });
@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     province: req.body.province
   }
 
-  console.log(`body: ${body.email}`)
+
 
   try {
     const auth = new google.auth.GoogleAuth({
@@ -30,7 +30,7 @@ export default async function handler(req, res) {
       ]
     });
 
-    console.log(`private_key: ${process.env.NEXT_PUBLIC_GOOGLE_PRIVATE_KEY}`);
+
 
     const sheets = google.sheets({
       auth,
@@ -38,7 +38,7 @@ export default async function handler(req, res) {
       spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID
     });
 
-    console.log(`sheets: ${Object.keys(sheets)}`);
+
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID,

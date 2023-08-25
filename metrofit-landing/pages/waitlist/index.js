@@ -2,8 +2,6 @@ import WaitlistForm from "../../components/WaitlistForm"
 
 export default function Waitlist() {
 
-  console.log(`hello!`)
-
   return (
     <div>
       <br />

@@ -32,7 +32,7 @@ export default function WaitlistForm() {
 
     // Returned content from the response
     const content = await response.json();
-    console.log(`content: ${content}`)
+
 
     // This should be removed at a later date. Currently used to reset the forms data.
     setFullName('');

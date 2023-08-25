@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     province: req.body.province
   }
 
-  console.log(`body: ${body}`)
+  console.log(`body: ${body.email}`)
 
   try {
     const auth = new google.auth.GoogleAuth({

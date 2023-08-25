@@ -23,7 +23,7 @@ export default async function handler(req, res) {
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL,
-        private_key: `-----BEGIN PRIVATE KEY-----${b64_publicKey}-----END PRIVATE KEY-----`
+        private_key: `-----BEGIN PRIVATE KEY-----${b64_publicKey}-----END PRIVATE KEY-----`.replace(/\\n/g, '\n')
       },
       scopes: [
         'https://www.googleapis.com/auth/drive',

@@ -1,7 +1,7 @@
 import { google } from 'googleapis';
 
 export default async function handler(req, res) {
-  
+
   console.log(`hello from waitlist submit`)
 
   if (req.method !== 'POST') {
@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
   const body = {
     fullName: req.body.fullName,
-    email: req.body.email, 
+    email: req.body.email,
     country: req.body.country,
     province: req.body.province
   }
@@ -30,11 +30,15 @@ export default async function handler(req, res) {
       ]
     });
 
+    console.log(`private_key: ${process.env.NEXT_PUBLIC_GOOGLE_PRIVATE_KEY}`);
+
     const sheets = google.sheets({
       auth,
       version: 'v4',
       spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID
     });
+
+    console.log(`sheets: ${Object.keys(sheets)}`);
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID,
@@ -43,7 +47,7 @@ export default async function handler(req, res) {
       requestBody: {
         values: [
           [
-            body.fullName, 
+            body.fullName,
             body.email,
             body.country,
             body.province

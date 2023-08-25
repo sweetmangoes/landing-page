@@ -5,11 +5,24 @@ export default function PartnerForm() {
 
   const [fullName, setFullName] = useState('');
   const [type, setType] = useState('');
-  const [website, setWebsite] = useState('');;
+  const [website, setWebsite] = useState('');
   const [contact, setContact] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [alert, setAlert] = useState('hidden')
+
+  // add https: for websites
+  const handleWebsiteChange = (e) => {
+    const userInput = e.target.value;
+    let normalizedUrl = userInput;
+
+    // Check if the URL lacks a scheme, then prepend "http://"
+    if (!userInput.startsWith('http://') && !userInput.startsWith('https://')) {
+      normalizedUrl = `http://${userInput}`;
+    }
+
+    setWebsite(normalizedUrl);
+  };
 
   // async function for submitting the states to the api.
   const handleSubmit = async (event) => {
@@ -91,7 +104,7 @@ export default function PartnerForm() {
           <input
             value={website}
             type='url'
-            onChange={e => setWebsite(e.target.value)}
+            onChange={handleWebsiteChange}
             placeholder=' www.abcgym.com'
             className='bg-white font-montserrat p-2 rounded-lg'
           />

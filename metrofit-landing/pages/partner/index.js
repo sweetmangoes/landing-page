@@ -7,7 +7,7 @@ export default function Partner() {
       <br />
       <br />
       <br />
-      <div className="bg-black w-full h-full flex flex-row items-center justify-evenly p-2 lg:">
+      <div className="bg-white w-full h-full flex flex-row items-center justify-evenly p-2 lg:">
         <div className="border-[3px] rounded-[3rem] border-black h-auto lg:h-[90%] w-[94%] flex flex-col sm:flex-row justify-around p-5">
           <div className="flex flex-col items-center justify-center overflow:auto sm:w-[20rem] md:w-[30rem] lg:w-[38rem] text-center text-black">
             <h1 className=" font-monomaniac bg-amber-300 rounded-md text-[1.5rem] p-1">

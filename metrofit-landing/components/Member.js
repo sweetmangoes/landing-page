@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Member() {
 
   return (
-    <div className="bg-white w-full flex justify-center items-center
+    <div className="w-full flex justify-center items-center
                     lg:h-[90vh]">
       <div className="h-full w-full lg:w-[94%] flex flex-col items-center bg-no-repeat bg-center bg-contain bg-member-active
                       lg:border-[3px] lg:rounded-[3rem] lg:border-black lg:h-[90%] lg:flex-row lg:p-0 lg:bg-none">

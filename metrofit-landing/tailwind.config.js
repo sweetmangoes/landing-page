@@ -12,6 +12,9 @@ module.exports = {
       montserrat: ['Montserrat', 'sans-serif'],
     }
   },
+  backgroundImage:{
+    'member': "url('../public/images/member-bg.svg')",
+  },
   plugins: [],
 }
 

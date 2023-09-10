@@ -5,7 +5,7 @@ export default function Partner() {
   return (
     <div className="bg-black w-full flex flex-col
                     lg:">
-      <div className="w-full flex flex-col items-center justify-between p-10 font-montserrat h-4/5
+      <div className="w-full flex flex-col items-center text-white justify-between p-10 font-montserrat h-4/5
                       lg:flex-row lg:h-4/5">
         <div className="flex flex-col items-center text-center">
           <img className="" src='/images/coin.svg'></img>

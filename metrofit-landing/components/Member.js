@@ -8,7 +8,7 @@ export default function Member() {
       <div className="h-full w-full lg:w-[94%] flex flex-col items-center bg-no-repeat bg-center bg-contain bg-[url('/member-bg.svg')]
                       lg:border-[3px] lg:rounded-[3rem] lg:border-black lg:h-[90%] lg:flex-row lg:p-0 lg:bg-none">
         {/* <img className="" src='/images/member-bg.svg'></img> */}
-        <div className="h-full bg-no-repeat bg-center bg-contain bg-[url('../public/images/member-bg.svg')]
+        <div className="h-full bg-no-repeat bg-center bg-contain bg-[url('../public//images/member-bg.svg')]
                         lg:w-[49.3%] lg:rounded-[3rem]">
           <p className="font-monomaniac text-[6rem] leading-[5rem] text-black p-8">BE A<br /> MEMBER</p>
         </div>
